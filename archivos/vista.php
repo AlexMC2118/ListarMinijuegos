@@ -7,9 +7,13 @@
         /**
          * Visualiza los minijuegos
          */
-        public function listar()
+        public function listar($resultado)
         {
-            
+          echo '
+            <div>
+              <img src="'.$resultado['portada'].'.png" />
+            </div>
+          ';
         }
     }
 ?>

@@ -10,18 +10,12 @@
     </head>
     <body>
         <main>
+          <section>
             <?php
                 require 'archivos/controlador.php'; //llamamos a los parametros para la conexion
                 $procesos = new Controlador();
             ?>
-            <section>
-              <div></div>
-              <div></div>
-            </section>
-            <section>
-              <div></div>
-              <div></div>
-            </section>
+          </section>
         </main>
     </body>
 </html>

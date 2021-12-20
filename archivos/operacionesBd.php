@@ -17,6 +17,16 @@
     {
       return $this->conexion->query($consulta);
     }
+    public function contar(){
+      $consulta = "SELECT * FROM minijuego";
+      $this->resultado = $this->hacerConsulta($consulta);
+      return $this->resultado->num_rows;
+    }
+    public function listar(){
+      $consulta = "SELECT * FROM minijuego";
+      $this->resultado = $this->hacerConsulta($consulta);
+      return $this->resultado;
+    }
 
     public function informacionError() //La llamamos para ver una descripcion del error de la consulta
     {

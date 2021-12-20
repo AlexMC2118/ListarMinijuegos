@@ -15,6 +15,13 @@
             $this->operaciones = new Operaciones();
             require 'vista.php';
             $this->vista = new Vista();
+            $this->iniciar();
+        }
+        public function iniciar(){
+            $filas=$this->operaciones->contar();
+            $resultado=$this->operaciones->listar();
+            for ($i=0;$i<$filas;$i++)
+              $this->vista->listar(mysqli_fetch_array($resultado, MYSQLI_ASSOC), $filas);
         }
     }
 ?>
