@@ -1,0 +1,37 @@
+/*
+    @author: Manuel Solís Gómez (masogo008@gmail.com)
+    @author: Alejandro Moreno Camachp (amorenocamacho.guadalupe@alumnado.fundacionloyola.net)
+    @description: Archivo que pondra estilo especifico de inicio en medidas de porcentaje
+    @file: estiloInicio.css
+    @license: totalmente libre
+*/
+/*Añadimos fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  background-image: url('img/fondo.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 12px;
+}
+main{
+  background: rgb(150,150,150,0.5);
+  border-radius: 10px;
+  width: 70%;
+  height: 70vh;
+  margin: 10vh auto;
+  padding: 5vh 5vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+main section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5vw;
+  grid-auto-rows: minmax(30vh, auto);
+  margin-bottom: 5vh;
+}
+main section div {
+  height: 100%;
+  background-color: red;
+}
