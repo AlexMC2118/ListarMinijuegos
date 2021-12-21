@@ -43,7 +43,33 @@ main section {
   grid-gap: 5vw;
   grid-auto-rows: minmax(30vh, auto);
 }
+.oculta{
+  opacity: 0;
+  width:50%;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  transition: all 0.5s;
+}
 main section div {
   height: 100%;
   background-color: red;
+  position: relative;
+}
+main section div a img{
+  width: 100%;
+  max-height: 30vh;
+  display: block;
+  margin: 0 auto;
+  filter: blur(0.7px);
+}
+main section div:hover .oculta{
+  opacity: 100;
+}
+h2{
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
 }

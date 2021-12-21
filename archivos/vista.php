@@ -11,7 +11,9 @@
         {
           echo '
             <div>
-              <img src="'.$resultado['portada'].'.png" />
+              <a href="#"><img src="'.$resultado['portada'].'.png" /></a>
+              <h2>'.$resultado['nombre'].'</h2>
+              <img class="oculta" src="img/play.png" />
             </div>
           ';
         }
