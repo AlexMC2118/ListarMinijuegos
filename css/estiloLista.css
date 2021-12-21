@@ -13,6 +13,18 @@ body{
   background-repeat: no-repeat;
   font-size: 12px;
 }
+main::-webkit-scrollbar {
+  width: 12px;
+}
+
+main::-webkit-scrollbar-track {
+  background: rgb(150,150,150,0.5);
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 20px;
+}
 main{
   background: rgb(150,150,150,0.5);
   border-radius: 10px;
