@@ -19,11 +19,12 @@ main::-webkit-scrollbar {
 
 main::-webkit-scrollbar-track {
   background: rgb(150,150,150,0.5);
+  border-radius: 0 10px 10px 0;
 }
 
 main::-webkit-scrollbar-thumb {
   background-color: lightgray;
-  border-radius: 20px;
+  border-radius: 0 10px 10px 0;
 }
 main{
   background: rgb(150,150,150,0.5);
