@@ -11,9 +11,9 @@
         {
           echo '
             <div>
-              <a href="#"><img src="'.$resultado['portada'].'.png" /></a>
+              <a href="'.$resultado['ruta'].'?idMinijuego='.$resultado['idMinijuego'].'"><img src="'.$resultado['portada'].'.png" /></a>
               <h2>'.$resultado['nombre'].'</h2>
-              <img class="oculta" src="img/play.png" />
+              <a href="'.$resultado['ruta'].'?idMinijuego='.$resultado['idMinijuego'].'"><img class="oculta" src="img/play.png" /></a>
             </div>
           ';
         }
